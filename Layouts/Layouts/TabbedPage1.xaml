@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts.TabbedPage1">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Tab 1" >
+        <StackLayout>
+            <Entry Text="Usuario"></Entry>
+            <Entry Text="Password"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="LawnGreen"                     
+                    HorizontalOptions="FillAndExpand" Text="Salir"></Button>
+                <Button BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Text="Cancelar"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+       
+    <ContentPage Title="Tab 2" >
+        <AbsoluteLayout>
+            <Label Text="Hola Mundo" BackgroundColor="Red"
+               AbsoluteLayout.LayoutBounds="115,450,100,200"></Label>
+            <Label Text="Hola Mundo" BackgroundColor="Blue"
+               AbsoluteLayout.LayoutBounds="115,250,100,200"></Label>
+        </AbsoluteLayout>
+    </ContentPage>
+    
+    <ContentPage Title="Tab 3" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button  BackgroundColor="LawnGreen" Text="Salir"
+            Grid.Row="1" Grid.Column="1"></Button>
+            <Button  BackgroundColor="Aqua" Text="Salir"
+            Grid.Row="2" Grid.Column="2"></Button>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Tab 4" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button  BackgroundColor="LawnGreen" Text="Salir"
+            Grid.Row="1" Grid.Column="1"></Button>
+            <Button  BackgroundColor="Aqua" Text="Salir"
+            Grid.Row="2" Grid.Column="2"></Button>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Tab 5" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button  BackgroundColor="LawnGreen" Text="Salir"
+            Grid.Row="1" Grid.Column="1"></Button>
+            <Button  BackgroundColor="Aqua" Text="Salir"
+            Grid.Row="2" Grid.Column="2"></Button>
+        </Grid>
+    </ContentPage>
+</TabbedPage>
